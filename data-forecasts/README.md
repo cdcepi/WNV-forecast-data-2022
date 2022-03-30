@@ -13,7 +13,8 @@ format](#Data-formatting) as well as [validation](#Data-validation) that
 you can do prior to this pull request. In addition, we describe
 [metadata](https://github.com/cdcepi/WNV-forecast-data-2022/blob/master/data-forecasts/METADATA.md) that each model should provide.
 
-See [data-surveillance](./data-surveillance) folder for details on reported WNV neuroinvasive case data. 
+See [data-surveillance](https://github.com/cdcepi/WNV-forecast-data-2022/tree/main/data-surveillance) folder for 
+details on reported WNV neuroinvasive case data. 
 
 *Table of Contents*
 
