@@ -9,12 +9,12 @@ the [data-forecasts/](./) folder. Data in this directory should be added
 to the repository through a pull request so that automatic data validation checks are run.
 
 These instructions provide detail about the [data
-format](#Data-formatting) as well as [validation](#Data-validation) that
+format](#Data-formatting) as well as [validation](#Forecast-validation) that
 you can do prior to this pull request. In addition, we describe
 [metadata](https://github.com/cdcepi/WNV-forecast-data-2022/blob/master/data-forecasts/METADATA.md) that each model should provide.
 
-See [data-surveillance](https://github.com/cdcepi/WNV-forecast-data-2022/tree/main/data-surveillance) folder for 
-details on reported WNV neuroinvasive case data. 
+See the [data-surveillance/](https://github.com/cdcepi/WNV-forecast-data-2022/tree/main/data-surveillance) folder for 
+details on the reported WNV neuroinvasive case data. 
 
 *Table of Contents*
 
@@ -119,6 +119,7 @@ columns (in any order):
 
 -   `forecast_date`
 -   `target`
+-   `fips`
 -   `location`
 -   `type`
 -   `quantile`
@@ -126,8 +127,8 @@ columns (in any order):
 
 No additional columns are allowed.
 
-Each row in the file is either a point or quantile forecast for a
-location on a particular date for a particular target.
+Each row in the file is either a point or quantile forecast for a location on a particular date for a particular 
+target. See the [template](./wnv_forecasting_template.csv) for an example.
 
 
 ### `forecast_date`
@@ -144,26 +145,27 @@ request from some analysts.
 
 Values in the `target` column must be the following character (string):
 
--   “Total WNV neroinvasive disease cases"
+-   “Total WNV neuroinvasive disease cases"
 
 The total number of West Nile virus (WNV) neuroinvasive disease cases (confirmed and probable following the 
 [WNV neuroinvasive disease case definition](https://ndc.services.cdc.gov/case-definitions/arboviral-diseases-neuroinvasive-and-non-neuroinvasive-2015/)) 
 reported to [ArboNET](https://wwwn.cdc.gov/arbonet/Maps/ADB_Diseases_Map/index.html) from each county in the 
 contiguous United States in 2022.
 
+### `fips`
+
+Values in the `fips` column are five digit FIPS code, which includes the two-digit state code and the three-digit 
+county code. These must be one of those in the [location file](../data-locations/locations.csv) 
+which includes numeric FIPS codes for the contiguous U.S. states and Washington DC.
+
+Please note that when writing FIPS codes, they should be written in as a character string to preserve any 
+leading zeroes.
+
 ### `location`
 
-Values in the `location` column must be one of the “locations” in this
-[FIPS numeric code file](../data-locations/locations.csv) which includes
-numeric FIPS codes for U.S. states and selected jurisdictions (Washington DC, Puerto Rico, and the US Virgin Islands) as well as “US” for national forecasts.
-
-Please note that when writing FIPS codes, they should be written in as a
-character string to preserve any leading zeroes.
-
-“State” and “County” as written in the data files with a hyphen: “State-County”. For example, 
+Values in the `location` column consist of the “State” and “County” as written with a hyphen: “State-County”. For example, 
 “California-San Diego” or “Texas-Harris”. Do not include the word “County” and include spaces between words 
-within the county or state name. The easiest way is to accomplish this is by matching the template available 
-above to the input data.
+within the county or state name. The easiest way is to accomplish this is by matching the format in the [location file](../data-locations/locations.csv).
 
 ### `type`
 
@@ -243,12 +245,12 @@ Preliminary results will be distributed to all teams following each submission d
 
 ### Logarithmic Score
 
-If ;;p;; is the set of probabilities for a given forecast, and ;;p_i;; is the probability assigned to the 
-observed outcome ;;i;;, the logarithmic score is:
+If *p* is the set of probabilities for a given forecast, and *p_i* is the probability assigned to the 
+observed outcome *i*, the logarithmic score is:
 
-$$S(p, i) = ln(p_i)$$ 
+S(p, i) = ln(p_i) 
 
-For each forecast of each target, ;;p_i;; will be set to the probability assigned to the single bin containing 
+For each forecast of each target, *p_i* will be set to the probability assigned to the single bin containing 
 the observed outcome. Undefined natural logs (which occur when the probability assigned to the observed outcome 
 was 0) will be assigned a value of -10.
 
