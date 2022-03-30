@@ -13,7 +13,7 @@ format](#Data-formatting) as well as [validation](#Data-validation) that
 you can do prior to this pull request. In addition, we describe
 [metadata](https://github.com/cdcepi/WNV-forecast-data-2022/blob/master/data-forecasts/METADATA.md) that each model should provide.
 
-See [data-surveillance/](./) folder for details on reported WNV neuroinvasive case data. 
+See [data-surveillance](./data-surveillance) folder for details on reported WNV neuroinvasive case data. 
 
 *Table of Contents*
 
@@ -253,5 +253,5 @@ was 0) will be assigned a value of -10.
 
 *References*
 
-- Gneiting T and AE Raftery. (2007) Strictly proper scoring rules, prediction, and estimation. Journal of the American Statistical Association. 102(477):359-378. Available at: [https://www.stat.washington.edu/raftery/Research/PDF/Gneiting2007jasa.pdf]([https://www.stat.washington.edu/raftery/Research/PDF/Gneiting2007jasa.pdf).
+- Gneiting T and AE Raftery. (2007) Strictly proper scoring rules, prediction, and estimation. Journal of the American Statistical Association. 102(477):359-378. Available at: [https://www.stat.washington.edu/raftery/Research/PDF/Gneiting2007jasa.pdf](https://www.stat.washington.edu/raftery/Research/PDF/Gneiting2007jasa.pdf).
 - Rosenfeld R, J Grefenstette, and D Burke. (2012) A Proposal for Standardized Evaluation of Epidemiological Models. Available at: [http://delphi.midas.cs.cmu.edu/files/StandardizedEvaluationRevised12-11-09.pdf](http://delphi.midas.cs.cmu.edu/files/StandardizedEvaluationRevised12-11-09.pdf).
