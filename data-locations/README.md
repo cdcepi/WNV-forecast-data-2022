@@ -1,4 +1,4 @@
-Data locations
+Locations
 ============================
 
 This folder contains a single comma-separated file `locations.csv` that 
