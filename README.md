@@ -4,14 +4,20 @@ This is the data repository for the 2022 CDC West Nile virus Forecasting Challen
 forecasting challenge to predict the monthly presence of West Nile virus (WNV) in U.S. counties during the 2022 
 calendar year.
 
-If you are a modeling team interested in participating in the Challenge, please see the 
-[instructions for requesting WNV data](./data-surveillance/README.md).
+
+### Participation
+To participate in the Challenge, please follow these steps:
+1. [Request WNV data](./data-surveillance/README.md) by sending a signed Data Use 
+Agreement to <vbd.predict@cdc.gov>.
+2. Prepare [metadata](./data-forecasts/README.md#Data-formatting) for your model.
+3. [Submit the forecast](./data-forecasts/README.md#Making-a-submission) by the deadlines.
+
 For information on submitting forecasts to this project, please see the 
 [submission instructions](./data-forecasts/README.md). Participating teams provide their 
-[forecasts](./data-forecasts/) in a [quantile-based format](./data-forecasts/README.md#Data-formatting).
+[forecasts](./data-forecasts/) in a [quantile-based format](./data-forecasts/README.md#Data-formatting) that will
+be evaluated according to [these criteria](./Evaluation.md). 
 
-**Timeline**
-
+### Timeline
 - Project announcement and historical data release: Winter 2022.
 - Initial forecast due: April 30, 2022.
 - Additional forecasts due (optional): May 31, June 30, and July 31, 2022.

@@ -4,7 +4,7 @@ Forecast submission instructions
 This page is intended to provide teams with all the information they
 need to submit forecasts. We note that these instructions have been adapted from the [COVID-19 Forecast Hub](https://github.com/reichlab/covid19-forecast-hub).
 
-All forecasts should be submitted directly to
+All forecasts should be [submitted directly](#Making-a-submission) to
 the [data-forecasts/](./) folder. Data in this directory should be added
 to the repository through a pull request so that automatic data validation checks are run.
 
@@ -20,8 +20,10 @@ details on the reported WNV neuroinvasive case data.
 
 -   [Data formatting for submission](#Data-formatting)
 -   [Forecast file format](#Forecast-file-format)
+-   [Making a submission](#Making-a-submission)
 -   [Forecast data validation](#Forecast-validation)
 -   [Policy on late submissions](#policy-on-late-or-updated-submissions)
+
 
 Data formatting
 ---------------
@@ -123,7 +125,7 @@ request from some analysts.
 
 Values in the `target` column must be the following character (string):
 
--   “Total WNV neuroinvasive disease cases"
+-   “Annual WNV neuroinvasive disease cases"
 
 The total number of West Nile virus (WNV) neuroinvasive disease cases (confirmed and probable following the 
 [WNV neuroinvasive disease case definition](https://ndc.services.cdc.gov/case-definitions/arboviral-diseases-neuroinvasive-and-non-neuroinvasive-2015/)) 
@@ -188,6 +190,28 @@ and `location` associated with that row. For a “quantile” prediction,
 the `target`, `location`, and `quantile` associated with that row.
 
 
+Making a submission
+---------------
+
+### Initial submission
+
+To prepare for the initial submission, make a [subdirectory](#Data-formatting) for your team in 
+the [data-forecasts/](./) folder. This is where you will place all your forecasts, metadata, and license (optional).
+
+Files should be added to the repository through a (pull request)[https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request] 
+so that automatic data validation checks are run. More information on making a pull request can be found 
+(here)[https://www.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github-3/].
+
+The initial submission should include the forecast for April 30, metadata
+
+
+### Additional submissions
+
+Forecast submissions for the optional May, June, and July deadlines as well as updated metadata are made through 
+pull requests as well. All the files for each team should be placed in their subdirectory.
+
+
+
 Forecast validation
 -------------------
 
@@ -199,11 +223,6 @@ To ensure proper data formatting, pull requests for new data in
 When a pull request is submitted, the data are validated through [Github Actions](https://docs.github.com/en/actions) which runs the tests present in [the validations repository](https://github.com/cdcepi/Flusight-forecast-validation). The intent
 for these tests are to validate the requirements above.
 Please [let us know](https://github.com/cdcepi/WNV-forecast-data-2022/issues)  if you are facing issues while running the tests.
-
-Monthly ensemble build
------------
-
-Every (date at time), we will generate the ensemble forecast using the most recent, valid forecast from each team.
 
 
 Policy on late or updated submissions
