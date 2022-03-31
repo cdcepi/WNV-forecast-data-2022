@@ -210,29 +210,3 @@ Policy on late or updated submissions
 ------------------
 
 In order to ensure that forecasting is done in real-time, all forecasts are required to be submitted to this repository by 11pm ET on Mondays each week. We do not accept late forecasts. 
-
-
-Evaluation
-------------------
-
-An analysis will be conducted using the average logarithmic score to assess and compare forecasts across all 
-counties at each time point. A joint manuscript will be prepared to disseminate findings on this comparison and 
-the general performance of submitted forecasts. Participants may publish their own forecasts and results at any time.
-
-Preliminary results will be distributed to all teams following each submission deadline.
-
-### Logarithmic Score
-
-If *p* is the set of probabilities for a given forecast, and *p_i* is the probability assigned to the 
-observed outcome *i*, the logarithmic score is:
-
-S(p, i) = ln(p_i) 
-
-For each forecast of each target, *p_i* will be set to the probability assigned to the single bin containing 
-the observed outcome. Undefined natural logs (which occur when the probability assigned to the observed outcome 
-was 0) will be assigned a value of -10.
-
-*References*
-
-- Gneiting T and AE Raftery. (2007) Strictly proper scoring rules, prediction, and estimation. Journal of the American Statistical Association. 102(477):359-378. Available at: [https://www.stat.washington.edu/raftery/Research/PDF/Gneiting2007jasa.pdf](https://www.stat.washington.edu/raftery/Research/PDF/Gneiting2007jasa.pdf).
-- Rosenfeld R, J Grefenstette, and D Burke. (2012) A Proposal for Standardized Evaluation of Epidemiological Models. Available at: [http://delphi.midas.cs.cmu.edu/files/StandardizedEvaluationRevised12-11-09.pdf](http://delphi.midas.cs.cmu.edu/files/StandardizedEvaluationRevised12-11-09.pdf).
