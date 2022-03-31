@@ -1,4 +1,4 @@
-Data submission instructions
+Forecast submission instructions
 ============================
 
 This page is intended to provide teams with all the information they
