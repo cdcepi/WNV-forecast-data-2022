@@ -179,6 +179,8 @@ The initial submission should include the forecast for April 30, metadata descri
 Forecast submissions for the optional May, June, and July deadlines as well as updated metadata are made through 
 pull requests as well. All the files for each team should be placed in their subdirectory.
 
+For additional submissions, indicate the modifications to the model and/or data under the `methods_long` variable
+in the [metadata](./METADATA.md) file.
 
 
 Forecast validation
