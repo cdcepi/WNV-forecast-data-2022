@@ -171,7 +171,7 @@ Files should be added to the repository through a [pull request](https://docs.gi
 so that automatic data validation checks are run. More information on making a pull request can be found 
 [here](https://www.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github-3/).
 
-The initial submission should include the forecast for April 30, metadata
+The initial submission should include the forecast for April 30, metadata describing the model, and optional license file.
 
 
 ### Additional submissions
