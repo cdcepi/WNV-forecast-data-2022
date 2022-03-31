@@ -1,11 +1,11 @@
 ## 2022 CDC West Nile virus Forecasting Challenge
 
 This is the data repository for the 2022 CDC West Nile virus Forecasting Challenge. This is an _**open**_ 
-forecasting challenge to predict the monthly presence of West Nile virus in U.S. counties during the 2022 
+forecasting challenge to predict the monthly presence of West Nile virus (WNV) in U.S. counties during the 2022 
 calendar year.
 
-If you are a modeling team interested in participating in the Challenge, please see theses 
-[instructions](./data-surveillance/README.md) for requesting data.
+If you are a modeling team interested in participating in the Challenge, please see the 
+[instructions](./data-surveillance/README.md) for requesting WNV data.
 For information on submitting forecasts to this project, please visit our [technical README 
 with detailed submission instructions](./data-forecasts/README.md). Participating teams provide their 
 [forecasts](./data-forecasts/) in a [quantile-based format](./data-forecasts/README.md#Data-formatting).
