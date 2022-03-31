@@ -6,7 +6,7 @@
     {
       "outcome_variable": "cases",
       "targets": [
-        "Total WNV neroinvasive disease cases"
+        "Annual WNV neroinvasive disease cases"
       ],
       "locations": [
         "US",
