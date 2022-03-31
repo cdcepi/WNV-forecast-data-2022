@@ -5,9 +5,9 @@ forecasting challenge to predict the monthly presence of West Nile virus (WNV) i
 calendar year.
 
 If you are a modeling team interested in participating in the Challenge, please see the 
-[instructions](./data-surveillance/README.md) for requesting WNV data.
-For information on submitting forecasts to this project, please visit our [technical README 
-with detailed submission instructions](./data-forecasts/README.md). Participating teams provide their 
+[instructions for requesting WNV data](./data-surveillance/README.md).
+For information on submitting forecasts to this project, please see the 
+[submission instructions](./data-forecasts/README.md). Participating teams provide their 
 [forecasts](./data-forecasts/) in a [quantile-based format](./data-forecasts/README.md#Data-formatting).
 
 **Timeline**
