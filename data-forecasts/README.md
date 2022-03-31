@@ -105,8 +105,8 @@ columns (in any order):
 
 No additional columns are allowed.
 
-Each row in the file is either a point or quantile forecast for a location on a particular date for a particular 
-target. See the [template](./wnv_forecasting_template.csv) for an example.
+Each row in the file is a quantile forecast for a location on a particular date. See the 
+[template](./wnv_forecasting_template.csv) for an example.
 
 
 ### `forecast_date`
@@ -164,8 +164,9 @@ Making a submission
 
 ### Initial submission
 
-To prepare for the initial submission, make a [subdirectory](#Data-formatting) for your team in 
-the [data-forecasts/](./) folder. This is where you will place all your forecasts, metadata, and license (optional).
+To prepare for the initial submission, make a [subdirectory](https://github.com/cdcepi/WNV-forecast-data-2022/blob/main/data-forecasts/README.md#subdirectory) 
+for your team in the [data-forecasts/](./) folder. This is where you will place all your forecasts, metadata, and 
+license (optional).
 
 Files should be added to the repository through a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) 
 so that automatic data validation checks are run. More information on making a pull request can be found 
@@ -180,7 +181,7 @@ Forecast submissions for the optional May, June, and July deadlines as well as u
 pull requests as well. All the files for each team should be placed in their subdirectory.
 
 For additional submissions, indicate the modifications to the model and/or data under the `methods_long` variable
-in the [metadata](./METADATA.md) file.
+in the [metadata](https://github.com/cdcepi/WNV-forecast-data-2022/blob/main/data-forecasts/METADATA.md#methods_long) file.
 
 
 Forecast validation
