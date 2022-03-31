@@ -99,9 +99,7 @@ columns (in any order):
 
 -   `forecast_date`
 -   `target`
--   `fips`
 -   `location`
--   `type`
 -   `quantile`
 -   `value`
 
@@ -132,45 +130,19 @@ The total number of West Nile virus (WNV) neuroinvasive disease cases (confirmed
 reported to [ArboNET](https://wwwn.cdc.gov/arbonet/Maps/ADB_Diseases_Map/index.html) from each county in the 
 contiguous United States in 2022.
 
-### `fips`
-
-Values in the `fips` column are five digit FIPS code, which includes the two-digit state code and the three-digit 
-county code. These must be one of those in the [location file](../data-locations/locations.csv) 
-which includes numeric FIPS codes for the contiguous U.S. states and Washington DC.
-
-Please note that when writing FIPS codes, they should be written in as a character string to preserve any 
-leading zeroes.
-
 ### `location`
 
 Values in the `location` column consist of the “State” and “County” as written with a hyphen: “State-County”. For example, 
 “California-San Diego” or “Texas-Harris”. Do not include the word “County” and include spaces between words 
 within the county or state name. The easiest way is to accomplish this is by matching the format in the [location file](../data-locations/locations.csv).
 
-### `type`
-
-Values in the `type` column are either
-
--   “point” or
--   “quantile”.
-
-This value indicates whether that row corresponds to a point forecast or
-a quantile forecast. Point forecasts are used in visualization while
-quantile forecasts are used in visualization and in ensemble
-construction.
-
-**When point forecasts are not included, the median for every
-location-target pair will be interpreted as the point forecast.**
-
 ### `quantile`
 
-Values in the `quantile` column are either “NA” (if `type` is “point”)
-or a quantile in the format
+Values in the `quantile` column are in the format
 
     0.###
 
-For quantile forecasts, this value indicates the quantile for the
-`value` in this row.
+This value indicates the quantile for the `value` in this row.
 
 Teams must provide the following 23 quantiles:
 
@@ -183,10 +155,7 @@ Teams must provide the following 23 quantiles:
 ### `value`
 
 Values in the `value` column are non-negative numbers indicating the
-“point” or “quantile” prediction for this row. For a “point” prediction,
-`value` is simply the value of that point prediction for the `target`
-and `location` associated with that row. For a “quantile” prediction,
-`value` is the inverse of the cumulative distribution function for
+“quantile” prediction for this row. This is the inverse of the cumulative distribution function for
 the `target`, `location`, and `quantile` associated with that row.
 
 
@@ -198,9 +167,9 @@ Making a submission
 To prepare for the initial submission, make a [subdirectory](#Data-formatting) for your team in 
 the [data-forecasts/](./) folder. This is where you will place all your forecasts, metadata, and license (optional).
 
-Files should be added to the repository through a (pull request)[https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request] 
+Files should be added to the repository through a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) 
 so that automatic data validation checks are run. More information on making a pull request can be found 
-(here)[https://www.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github-3/].
+[here](https://www.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github-3/).
 
 The initial submission should include the forecast for April 30, metadata
 
@@ -220,12 +189,14 @@ To ensure proper data formatting, pull requests for new data in
 
 ### Pull request forecast validation
 
-When a pull request is submitted, the data are validated through [Github Actions](https://docs.github.com/en/actions) which runs the tests present in [the validations repository](https://github.com/cdcepi/Flusight-forecast-validation). The intent
-for these tests are to validate the requirements above.
-Please [let us know](https://github.com/cdcepi/WNV-forecast-data-2022/issues)  if you are facing issues while running the tests.
+When a pull request is submitted, the data are validated through [Github Actions](https://docs.github.com/en/actions) 
+which runs the tests present in [the validations repository](https://github.com/cdcepi/Flusight-forecast-validation). The intent
+for these tests are to validate the requirements above. 
+Please [let us know](https://github.com/cdcepi/WNV-forecast-data-2022/issues) if you are facing issues while running the tests.
 
 
 Policy on late or updated submissions
 ------------------
 
-In order to ensure that forecasting is done in real-time, all forecasts are required to be submitted to this repository by 11pm ET on Mondays each week. We do not accept late forecasts. 
+In order to ensure that forecasting is done in real-time, all forecasts are required to be submitted to this 
+repository by the listed (deadlines)[../README.md]. We do not accept late forecasts. 
