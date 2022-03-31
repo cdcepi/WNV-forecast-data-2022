@@ -1,16 +1,16 @@
 Evaluation
 ------------------
 
-When reported data are available, an analysis will be conducted using the average logarithmic score to assess and compare forecasts across all 
+When reported data for 2022 are available, an analysis will be conducted using the average logarithmic score to assess and compare forecasts across all 
 counties at each time point. A joint manuscript will be prepared to disseminate findings on this comparison and 
 the general performance of submitted forecasts. Participants may publish their own forecasts and results at any time.
 
 ### Logarithmic Score
 
-Each quantile forecast will be fitted to a Negative Binomial distribution and the probability, p, of the observed outcome, x, 
+Each quantile forecast will be fitted to a Negative Binomial distribution and the probability, *p*, of the observed outcome, *x*, 
 will be calculated from the probability mass function (PMF) of that distribution. The corresponding logarithmic score is therefore:
 
-S(p|x) = ln(PMF(x))
+> S(p|x) = ln(PMF(x))
 
 Logarithmic scores below -10 will be assigned a value of -10.
 
