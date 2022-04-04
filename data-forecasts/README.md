@@ -202,4 +202,4 @@ Policy on late or updated submissions
 ------------------
 
 In order to ensure that forecasting is done in real-time, all forecasts are required to be submitted to this 
-repository by the listed (deadlines)[../README.md]. We do not accept late forecasts. 
+repository by the listed [deadlines](https://github.com/cdcepi/WNV-forecast-data-2022#timeline). We do not accept late forecasts. 
