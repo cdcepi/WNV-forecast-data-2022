@@ -8,7 +8,7 @@ calendar year.
 ### Participation
 To participate in the Challenge, please follow these steps:
 1. [Request WNV data](./data-surveillance/README.md) by sending a signed Data Use 
-Agreement to <vbd.predict@cdc.gov>.
+Agreement to <vbd-predict@cdc.gov>.
 2. Prepare [metadata](./data-forecasts/README.md#Data-formatting) for your model.
 3. [Submit the forecast](./data-forecasts/README.md#Making-a-submission) by the deadlines.
 
