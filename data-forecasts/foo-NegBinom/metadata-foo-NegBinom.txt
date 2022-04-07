@@ -1,10 +1,10 @@
 team_name: foo trial team
 model_name: NegBinom
 model_abbr: foo-NegBinom
-team_lead: Karen Holcomb (NOAA/CDC) sne3@cdc.gov
-model_contributors: Michael Johansson (CDC) eyq9@cdc.gov, Another Person (Some University) aperson@some.unvi.edu
+model_contributors: Karen Holcomb (NOAA/CDC) sne3@cdc.gov, Michael Johansson (CDC) eyq9@cdc.gov, Another Person (Some University) aperson@some.unvi.edu
+website_url: https://github.com/kmholcomb/WNV-forecast-data-2023?organization=kmholcomb&organization=kmholcomb
 license: cc-by-4.0
+team_model_designation: primary
 methods: Negative binomial distribution with size=1 and probability=0.1.
+ensemble_of_hub_models: FALSE
 data_inputs: No variables included.
-team_funding: None
-citation: None
