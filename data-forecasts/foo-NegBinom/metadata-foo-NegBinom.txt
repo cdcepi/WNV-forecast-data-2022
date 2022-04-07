@@ -6,5 +6,5 @@ website_url: https://github.com/kmholcomb/WNV-forecast-data-2023?organization=km
 license: cc-by-4.0
 team_model_designation: primary
 methods: Negative binomial distribution with size=1 and probability=0.1.
-ensemble_of_hub_models: FALSE
+ensemble_of_hub_models: false
 data_inputs: No variables included.
