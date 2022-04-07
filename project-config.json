@@ -6,7 +6,7 @@
     {
       "outcome_variable": "cases",
       "targets": [
-        "Annual WNV neroinvasive disease cases"
+        "Annual WNV neuroinvasive disease cases"
       ],
       "locations": [
         "Alabama-Autauga", "Alabama-Baldwin", "Alabama-Barbour", "Alabama-Bibb", 
