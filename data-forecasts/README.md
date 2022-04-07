@@ -99,7 +99,9 @@ columns (in any order):
 
 -   `forecast_date`
 -   `target`
+-   `target_end_date`
 -   `location`
+-   `type'
 -   `quantile`
 -   `value`
 
@@ -123,18 +125,30 @@ request from some analysts.
 
 Values in the `target` column must be the following character (string):
 
--   “Annual WNV neuroinvasive disease cases"
+    Annual WNV neuroinvasive disease cases
 
 The total number of West Nile virus (WNV) neuroinvasive disease cases (confirmed and probable following the 
 [WNV neuroinvasive disease case definition](https://ndc.services.cdc.gov/case-definitions/arboviral-diseases-neuroinvasive-and-non-neuroinvasive-2015/)) 
 reported to [ArboNET](https://wwwn.cdc.gov/arbonet/Maps/ADB_Diseases_Map/index.html) from each county in the 
 contiguous United States in 2022.
 
+### `forecast_end_date`
+
+Values in the `forecast_end_date` column must be the following (date):
+
+    2022-12-31 
+
+This is the date of the end of the forecast period (aka last day of 2022).
+
 ### `location`
 
 Values in the `location` column consist of the “State” and “County” as written with a hyphen: “State-County”. For example, 
 “California-San Diego” or “Texas-Harris”. Do not include the word “County” and include spaces between words 
 within the county or state name. The easiest way is to accomplish this is by matching the format in the [location file](../data-locations/locations.csv).
+
+### `type`
+
+Values in the `type` column should be the following string: "quantile".
 
 ### `quantile`
 
@@ -164,16 +178,24 @@ Making a submission
 
 ### Initial submission
 
-To prepare for the initial submission, make a [subdirectory](https://github.com/cdcepi/WNV-forecast-data-2022/blob/main/data-forecasts/README.md#subdirectory) 
+To prepare for the initial submission, fork this repository and clone it to your computer/work station/etc. In this
+version of the repo, make a [subdirectory](https://github.com/cdcepi/WNV-forecast-data-2022/blob/main/data-forecasts/README.md#subdirectory) 
 for your team in the [data-forecasts/](./) folder. This is where you will place all your forecasts, metadata, and 
-license (optional).
+optional license files.
 
-Files should be added to the repository through a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) 
-so that automatic data validation checks are run. More information on making a pull request can be found 
+Use a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) 
+to create your submission to the original repo. With the pull request, automatic data validation checks on file 
+format and content are run. More information on making a pull request can be found 
 [here](https://www.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github-3/).
 
 The initial submission should include the forecast for April 30, metadata describing the model, and optional license file.
+Teams are encouraged to submit early for the initial submission to work out the kinks of pull requests and validations. Note
+that if you submit more than a day before the first submission deadline (April 30, 2022), the automatic validations
+will flag the submission, but this is not a problem assuming the rest of the checks pass successfully.
 
+When a pull request is open, you can add/modify files in the pull request by pushing changes from your forked repo. 
+This will allow you to address any problems found during the validation checks. Automatic checks run after each push 
+so you can check if you were able to resolve the problems listed.
 
 ### Additional submissions
 
@@ -187,8 +209,8 @@ in the [metadata](https://github.com/cdcepi/WNV-forecast-data-2022/blob/main/dat
 Forecast validation
 -------------------
 
-To ensure proper data formatting, pull requests for new data in
-`data-forecasts/` will be automatically run.
+To ensure proper data formatting, automatic validations are run on all pull requests to
+`data-forecasts/`. 
 
 ### Pull request forecast validation
 
