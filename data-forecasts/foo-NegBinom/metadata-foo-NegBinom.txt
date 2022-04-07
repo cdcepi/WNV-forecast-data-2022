@@ -1,6 +1,6 @@
 team_name: foo trial team
-model_name: naive
-model_abbr: foo-naive
+model_name: NegBinom
+model_abbr: foo-NegBinom
 team_lead: Karen Holcomb (NOAA/CDC) sne3@cdc.gov
 model_contributors: Michael Johansson (CDC) eyq9@cdc.gov, Another Person (Some University) aperson@some.unvi.edu
 license: cc-by-4.0
