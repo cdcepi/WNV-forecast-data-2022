@@ -7,10 +7,10 @@ the general performance of submitted forecasts. Participants may publish their o
 
 ### Logarithmic Score
 
-Each quantile forecast will be fitted to a Negative Binomial distribution and the probability, *p*, of the observed outcome, *x*, 
-will be calculated from the probability mass function (PMF) of that distribution. The corresponding logarithmic score is therefore:
+Each quantile forecast will be fitted to a negative binomial distribution and the probability, *p*, of the observed outcome, *x*, 
+will be calculated from the probability mass function (PMF) of the fitted negative binonmial distribution. The corresponding logarithmic score is therefore:
 
-> S(p|x) = ln(PMF(x))
+> S(x) = ln(p(x))
 
 Logarithmic scores below -10 will be assigned a value of -10.
 
