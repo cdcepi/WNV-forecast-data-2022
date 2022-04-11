@@ -32,7 +32,7 @@ and a draft of the article or presentation will be provided to the CDC Arboviral
 
 ## Data Dictionary
 Data consist of total annual neuroinvasive disease counts reported to ArboNET for counties (n = 3,108) in the 48 states (including the District of 
-Columbia) within the contiguous United States from 2000–2021. Each line represents all cases for a single county in a single year. 
+Columbia) within the contiguous United States from 2000–2021 (2021 data are provisional as of April 2022). Each line represents all cases for a single county in a single year. 
 Zeroes indicate a county did not reported neuroinvasive cases in the given year. A detailed description of the 
 fields included in the csv file is included below.
 
