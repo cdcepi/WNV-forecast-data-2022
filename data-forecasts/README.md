@@ -214,7 +214,7 @@ To ensure proper data formatting, automatic validations are run on all pull requ
 ### Pull request forecast validation
 
 When a pull request is submitted, the data are validated through [Github Actions](https://docs.github.com/en/actions) 
-which runs the tests present in [the validations repository](https://github.com/cdcepi/Flusight-forecast-validation). The intent
+which runs the tests present in [the validations repository](https://github.com/reichlab/covid19-forecast-hub-validations). The intent
 for these tests are to validate the requirements above. 
 Please [let us know](https://github.com/cdcepi/WNV-forecast-data-2022/issues) if you are facing issues while running the tests.
 
