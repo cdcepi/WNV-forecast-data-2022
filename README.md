@@ -1,7 +1,7 @@
 ## 2022 CDC West Nile virus Forecasting Challenge
 
 This is the data repository for the 2022 CDC West Nile virus Forecasting Challenge. This is an _**open**_ 
-forecasting challenge to predict the monthly presence of West Nile virus (WNV) in U.S. counties during the 2022 
+forecasting challenge to predict West Nile virus (WNV) neuroinvasive disease cases in U.S. counties during the 2022 
 calendar year.
 
 
@@ -36,11 +36,11 @@ subsequently spread westward, reaching the Pacific coast in 2003. Since then, WN
 outbreaks that vary in size and location, with most areas having sporadic disease or intermittent outbreaks. No 
 vaccine or specific treatment of WNV is currently available. Reducing mosquito exposure through vector control and 
 personal protective behaviors are the primary forms of prevention. Predicting where and when WNV transmission will 
-occur could help direct public health control efforts.
+occur could help direct control efforts.
 
 
 ## Data license and reuse
-We are grateful to the teams who have generated these and made their data publicly available under different terms 
+We are grateful to the teams who have generated these forecasts and made their forecast data publicly available under different terms 
 and licenses. By default, forecasts are available under the CC-BY 4.0 license, although teams may specify release 
 under a different license in their metadata. You will find the licenses (when provided) within the metadata 
 contained within model-specific folders in the [data-forecasts](./data-forecasts/) directory. Please consult these 
