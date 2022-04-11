@@ -74,7 +74,6 @@ University or company names, if relevant.
 Like an acknowledgement in a manuscript, you can acknowledge funding here.
 
 ### repo_url
-(previously `model_repo`)
 
 A github (or similar) repository url. 
 
