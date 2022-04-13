@@ -2,7 +2,7 @@ Forecast submission instructions
 ============================
 
 This page is intended to provide teams with all the information they
-need to submit forecasts. We note that these instructions have been adapted from the [COVID-19 Forecast Hub](https://github.com/reichlab/covid19-forecast-hub).
+need to submit forecasts. These instructions have been adapted from the [COVID-19 Forecast Hub](https://github.com/reichlab/covid19-forecast-hub).
 
 All forecasts should be [submitted directly](#Making-a-submission) to
 the [data-forecasts/](./) folder. Data in this directory should be added
@@ -40,7 +40,7 @@ directory has the format
 
 where
 
--   `team` is the teamname and
+-   `team` is the name of your team and
 -   `model` is the name of your model.
 
 Both team and model should be less than 15 characters and not include
@@ -80,11 +80,11 @@ where
 -   `YYYY` is the 4 digit year,
 -   `MM` is the 2 digit month,
 -   `DD` is the 2 digit day,
--   `team` is the teamname, and
+-   `team` is the name of your team, and
 -   `model` is the name of your model.
 
 The date YYYY-MM-DD is the [`forecast_date`](#forecast_date). For this project, the `forecast_date` should always 
-be the date which the submission is due.
+be the date that the submission is due.
 
 The `team` and `model` in this file must match the `team` and `model` in
 the directory this file is in. Both `team` and `model` should be less
@@ -101,13 +101,13 @@ columns (in any order):
 -   `target`
 -   `target_end_date`
 -   `location`
--   `type'
+-   `type`
 -   `quantile`
 -   `value`
 
 No additional columns are allowed.
 
-Each row in the file is a quantile forecast for a location on a particular date. See the 
+Each row in the file is a single quantile forecast for a specific location. See the 
 [template](./wnv_forecasting_template.csv) for an example.
 
 
@@ -118,8 +118,7 @@ Values in the `forecast_date` column must be a date in the format
     YYYY-MM-DD
 
 This is the date on which the forecasts were due to be submitted.  `forecast_date` should correspond
-and be redundant with the date in the filename, and is included here by
-request from some analysts. 
+and be redundant with the date in the filename, and is included here for internal completeness. 
 
 ### `target`
 
@@ -132,23 +131,24 @@ The total number of West Nile virus (WNV) neuroinvasive disease cases (confirmed
 reported to [ArboNET](https://wwwn.cdc.gov/arbonet/Maps/ADB_Diseases_Map/index.html) from each county in the 
 contiguous United States in 2022.
 
-### `forecast_end_date`
+### `target_end_date`
 
-Values in the `forecast_end_date` column must be the following (date):
+Values in the `target_end_date` column should all be the following date:
 
     2022-12-31 
 
-This is the date of the end of the forecast period (aka last day of 2022).
+This is the date of the end of the forecast period, the last day of 2022.
 
 ### `location`
 
 Values in the `location` column consist of the “State” and “County” as written with a hyphen: “State-County”. For example, 
 “California-San Diego” or “Texas-Harris”. Do not include the word “County” and include spaces between words 
-within the county or state name. The easiest way is to accomplish this is by matching the format in the [location file](../data-locations/locations.csv).
+within the county or state name. The easiest way is to accomplish this and ensure that all forecasted locations match the expected forecast locations
+is by matching the format in the [location file](../data-locations/locations.csv).
 
 ### `type`
 
-Values in the `type` column should be the following string: "quantile".
+Values in the `type` column should all be the following string: "quantile".
 
 ### `quantile`
 
@@ -168,7 +168,7 @@ Teams must provide the following 23 quantiles:
 
 ### `value`
 
-Values in the `value` column are non-negative numbers indicating the
+Values in the `value` column are non-negative real numbers indicating the
 “quantile” prediction for this row. This is the inverse of the cumulative distribution function for
 the `target`, `location`, and `quantile` associated with that row.
 
@@ -178,9 +178,9 @@ Making a submission
 
 ### Initial submission
 
-To prepare for the initial submission, fork this repository and clone it to your computer/work station/etc. In this
-version of the repo, make a [subdirectory](https://github.com/cdcepi/WNV-forecast-data-2022/blob/main/data-forecasts/README.md#subdirectory) 
-for your team in the [data-forecasts/](./) folder. This is where you will place all your forecasts, metadata, and 
+To prepare for the initial submission, fork this repository and clone it to your computer/work station/etc. In the
+forked repository you created, make a [subdirectory](https://github.com/cdcepi/WNV-forecast-data-2022/blob/main/data-forecasts/README.md#subdirectory) 
+for your team in the [data-forecasts/](./) folder following the subdirectory [naming convention](https://github.com/cdcepi/WNV-forecast-data-2022/blob/main/data-forecasts/README.md#subdirectory). This is where you will place all your forecasts, metadata, and 
 optional license files.
 
 Use a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) 
@@ -188,9 +188,8 @@ to create your submission to the original repo. With the pull request, automatic
 format and content are run. More information on making a pull request can be found 
 [here](https://www.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github-3/).
 
-The initial submission should include the forecast for April 30, metadata describing the model, and optional license file.
-Teams are encouraged to submit early for the initial submission to work out the kinks of pull requests and validations. Note
-that if you submit more than a day before the first submission deadline (April 30, 2022), the automatic validations
+The initial submission should include the forecast for April 30 and the metadata file describing the model. An optional license file can also be included.
+Teams are encouraged to submit early for the initial submission to work out the kinks of pull requests and validations. Submissions can be updated at any point prior to the submission deadline. Note that if you submit more than a day before the first submission deadline (April 30, 2022), the automatic validations
 will flag the submission, but this is not a problem assuming the rest of the checks pass successfully.
 
 When a pull request is open, you can add/modify files in the pull request by pushing changes from your forked repo. 
@@ -199,8 +198,8 @@ so you can check if you were able to resolve the problems listed.
 
 ### Additional submissions
 
-Forecast submissions for the optional May, June, and July deadlines as well as updated metadata are made through 
-pull requests as well. All the files for each team should be placed in their subdirectory.
+Forecast submissions for the optional May, June, and July deadlines as well as updated metadata can be made through 
+pull requests as well. Those submission should use the respective submission deadline in the file names and be placed in the same team-model subdirectory as the prior submissions.
 
 For additional submissions, indicate the modifications to the model and/or data under the `methods_long` variable
 in the [metadata](https://github.com/cdcepi/WNV-forecast-data-2022/blob/main/data-forecasts/METADATA.md#methods_long) file.
@@ -215,7 +214,7 @@ To ensure proper data formatting, automatic validations are run on all pull requ
 ### Pull request forecast validation
 
 When a pull request is submitted, the data are validated through [Github Actions](https://docs.github.com/en/actions) 
-which runs the tests present in [the validations repository](https://github.com/cdcepi/Flusight-forecast-validation). The intent
+which runs the tests present in [the validations repository](https://github.com/reichlab/covid19-forecast-hub-validations). The intent
 for these tests are to validate the requirements above. 
 Please [let us know](https://github.com/cdcepi/WNV-forecast-data-2022/issues) if you are facing issues while running the tests.
 
