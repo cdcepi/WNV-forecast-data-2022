@@ -189,12 +189,14 @@ format and content are run. More information on making a pull request can be fou
 [here](https://www.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github-3/).
 
 The initial submission should include the forecast for April 30 and the metadata file describing the model. An optional license file can also be included.
-Teams are encouraged to submit early for the initial submission to work out the kinks of pull requests and validations. Submissions can be updated at any point prior to the submission deadline. Note that if you submit more than a day before the first submission deadline (April 30, 2022), the automatic validations
+Note, validations will fail if there are other commits than just these files in the pull request. Teams are encouraged to submit early for the initial submission to work out the kinks of pull requests and validations. Submissions can be updated at any point prior to the submission deadline. Note that if you submit more than a day before the first submission deadline (April 30, 2022), the automatic validations
 will flag the submission, but this is not a problem assuming the rest of the checks pass successfully.
 
 When a pull request is open, you can add/modify files in the pull request by pushing changes from your forked repo. 
 This will allow you to address any problems found during the validation checks. Automatic checks run after each push 
 so you can check if you were able to resolve the problems listed.
+
+Common reasons for a failed pull request: Excel changing the date format upon saving the .csv, misspelled column headers or keys in the metadata
 
 ### Additional submissions
 
