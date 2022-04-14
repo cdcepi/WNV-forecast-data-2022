@@ -1,0 +1,11 @@
+team_name: CDC
+model_name: NaiveHist
+model_abbr: CDC-NaiveHist
+model_contributors: Karen Holcomb (NOAA/CDC) sne3@cdc.gov, Michael Johansson (CDC) eyq9@cdc.gov
+website_url: https://github.com/kmholcomb/WNV-forecast-data-2023?organization=kmholcomb&organization=kmholcomb
+license: cc-by-4.0
+team_model_designation: primary
+methods: Quantiles from 2000-2021 historical WNV counts.
+ensemble_of_hub_models: false
+data_inputs: No variables included.
+methods_long: This is an example forecast (and naive forecast). We used the historical WNV (2000-2021) counts for all counties to calculate the 23 quantiles directly.
