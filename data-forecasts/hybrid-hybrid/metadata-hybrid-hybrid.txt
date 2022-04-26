@@ -1,7 +1,7 @@
 team_name: hybrid
 model_name: hybrid
 model_abbr: hybrid-hybrid
-model_contributors: Kelly Helm Smith (University of Nebraska-Lincoln) ksmith2@unl.edu, Alexander "Sasha" Keyel (NYSDOH) akeyel@albany.edu, Rebecca Smith (University of Illinois) rlsdvm@illinois.edu, Babak Jalalzadeh-Fard (U Nebraska Med Center) babak.jfard@unmc.edu, Drew Tyre (Bayer) atyre2@gmail.com, Nicholas DeFelice (Icahn School of Medicine), nicholas.defelice@mssm.edu, Johnny Uelmen (University of Michigan) uelmen@umich.edu, Philip Armstrong (CAES) philip.armstrong@ct.gov, John Shepard (CAES) john.shepard@ct.gov
+model_contributors: Kelly Helm Smith (University of Nebraska-Lincoln) ksmith2@unl.edu, Alexander "Sasha" Keyel (NYSDOH) akeyel@albany.edu, Rebecca Smith (University of Illinois) rlsdvm@illinois.edu, Drew Tyre (Bayer) drew.tyre@bayer.com, Nicholas DeFelice (Icahn School of Medicine), nicholas.defelice@mssm.edu, Johnny Uelmen (University of Michigan) uelmen@umich.edu, Philip Armstrong (CAES) philip.armstrong@ct.gov, John Shepard (CAES) john.shepard@ct.gov
 website_url: https://github.com/akeyel/WNV-forecast-data-2022
 license: cc-by-4.0
 team_model_designation: primary
