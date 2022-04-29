@@ -1,0 +1,18 @@
+team_name: Kansas State University
+model_name: Bayesian spatiotemporal
+model_abbr: Kansas-bayesian
+model_contributors: John Humphreys (USDA-ARS) John.Humphreys@usda.gov,  Caterina Scoglio (Kansas State University) caterina@ksu.edu, 
+Aram Vajdi (Kansas State University) avajdi@ksu.edu,  Chunlin Yi (Kansas State University) cyi@ksu.edu,  Lee Cohnstaedt (USDA-ARS-FABADRU) Lee.Cohnstaedt@usda.gov
+website_url: https://osf.io/jnpu7/
+license: CC-BY 4.0
+team_model_designation: primary
+ensemble_of_hub_models: false
+methods: Bayesian hierarchical model.
+team_funding: Kansas State University and US Government
+data_inputs: Confirmed cases, US Census, SAIPE poverty rates, virus surveillance (non-human virus detections), temperature, precipitation, avian phylodiversity.
+citation: https://osf.io/jnpu7/
+methods_long: " A two-part Bayesian hierarchical model was developed\
+\ in which the first part estimates WNV cases from the prior year and then passes this information to\
+\ the model’s second level to support target year predictions.  The model includes spatial and temporal\
+\ effects as well as spatially varying coefficients (SVC) for climate factors to enable location-specific\
+\ estimation of climatic influence."
