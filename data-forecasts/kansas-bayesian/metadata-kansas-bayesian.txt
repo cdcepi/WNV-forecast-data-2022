@@ -10,9 +10,9 @@ team_model_designation: primary
 ensemble_of_hub_models: false
 methods: Bayesian hierarchical model.
 team_funding: Kansas State University and US Government
-data_inputs: Confirmed cases, Climate, US Census (population; income)
+data_inputs: Confirmed cases, Temperature, Precipitation, avian phylodiversity, US Census (population; income)
 citation: https://osf.io/jnpu7/
 methods_long: "A two-part Bayesian hierarchical model was developed\
   \  The model includes spatial and temporal \
   \ effects as well as spatially varying coefficients (SVC) for climate factors to enable location-specific \
-  \ estimation of climatic influence."
+  \ estimation of climatic influence.  Avian host phylodiversity and economic variables are added as predictors."
