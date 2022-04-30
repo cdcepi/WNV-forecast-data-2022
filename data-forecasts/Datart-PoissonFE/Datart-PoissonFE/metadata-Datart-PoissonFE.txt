@@ -3,7 +3,7 @@ model_name: WNV prediction Poisson Fixed Effect
 model_abbr: WNV_pred_Poisson_FE
 model_contributors: Zeynep Ertem (Binghamton University) <zeynep@binghamton.edu>, Anseh Danesharasteh (Binghamton University) <adanesh1@binghamton.edu>, Amera Al-Amery (Binghamton 
                     University) <aalamer1@binghamton.edu>, Xilin Zhang (Binghamton University) <xzhan176@binghamton.edu>
-website_url: 
+website_url: https://github.com/xzhan176/WNV-forecast-data-2022/tree/main/data-forecasts
 license: CC-BY 4.0
 team_model_designation: primary
 ensemble_of_hub_models: false
