@@ -1,4 +1,4 @@
-team_name: Dataart
+team_name: Datart
 model_name: WNV prediction Poisson Fixed Effect
 model_abbr: WNV_pred_Poisson_FE
 model_contributors: Zeynep Ertem (Assistant Professor) <zeynep@binghamton.edu>, Anseh Danesharasteh (Graduate Research Assistant) <adanesh1@binghamton.edu>, Amera Al-Amery (Graduate Assistant) <aalamer1@binghamton.edu>, Xilin Zhang (Graduate Assistant) <xzhan176@binghamton.edu>
