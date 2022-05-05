@@ -184,8 +184,8 @@ for your team in the [data-forecasts/](./) folder following the subdirectory [na
 optional license files.
 
 Use a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) 
-to create your submission to the original repo. With the pull request, automatic data validation checks on file 
-format and content are run. More information on making a pull request can be found 
+to create your submission. Open a pull request from your forked repository to the original repo. This will initiate merging your changes into the main repo.
+With the pull request, automatic data validation checks on file format and content are run. More information on making a pull request can be found 
 [here](https://www.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github-3/).
 
 The initial submission should include the forecast for April 30 and the metadata file describing the model. An optional license file can also be included.
@@ -197,6 +197,8 @@ This will allow you to address any problems found during the validation checks. 
 so you can check if you were able to resolve the problems listed.
 
 Common reasons for a failed pull request: Excel changing the date format upon saving the .csv, misspelled column headers or keys in the metadata
+
+We will merge in open pull requests after each submission deadline.
 
 ### Additional submissions
 
