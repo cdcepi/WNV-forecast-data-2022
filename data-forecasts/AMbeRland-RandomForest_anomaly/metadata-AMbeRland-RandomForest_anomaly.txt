@@ -2,7 +2,7 @@ team_name: AMbeRland
 model_name: RandomForest_anomaly
 model_abbr: AMbeRland-RandomForest_anomaly
 model_contributors: Renata Retkute (University of Cambridge) rr614@cam.ac.uk, Augustinas Prusokas (Independent researcher) au.prusokas@gmail.com, Alidivinas Prusokas (Newcastle University) 
-website_url: TBA
+website_url: https://github.com/rretkute/WNV-forecast-data-2022
 license: cc-by-4.0
 team_model_designation: primary
 methods: Random forest predictions based on historical temperature anomaly data.
