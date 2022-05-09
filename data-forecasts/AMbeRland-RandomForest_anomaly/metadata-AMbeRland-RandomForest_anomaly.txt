@@ -1,0 +1,11 @@
+team_name: AMbeRland
+model_name: RandomForest_anomaly
+model_abbr: AMbeRland-RandomForest_anomaly
+model_contributors: Renata Retkute (University of Cambridge) rr614@cam.ac.uk, Augustinas Prusokas (Independent researcher) au.prusokas@gmail.com, Alidivinas Prusokas (Newcastle University) 
+website_url: https://github.com/rretkute/WNV-forecast-data-2022
+license: cc-by-4.0
+team_model_designation: primary
+methods: Random forest predictions based on historical temperature anomaly data.
+ensemble_of_hub_models: false
+data_inputs: NOAA GlobalTemp dataset of temperature anomalies.
+methods_long: For each location, we used center coordinates to extract values of monthly temperature anomalies. These were used as covariates, and case numbers were used as predictors when training random forest model. For prediction, we bootstraped historical values of monthly temperature anomalies for each location as predators for 2022.
