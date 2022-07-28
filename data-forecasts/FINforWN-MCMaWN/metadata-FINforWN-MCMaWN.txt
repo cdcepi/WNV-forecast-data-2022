@@ -10,7 +10,7 @@ model_contributors: Marco Ajelli (CEPH Lab, Indiana University School of Public 
   Piero Poletti (Center for Health Emergencies, Bruno Kessler Foundation) <poletti@fbk.eu>, 
   Agnese Zardini (Center for Health Emergencies, Bruno Kessler Foundation) <zardini@fbk.eu>, 
   Stefano Merler (Center for Health Emergencies, Bruno Kessler Foundation)
-website_url: https://github.com/XXXX
+website_url: https://github.com/cdcepi/WNV-forecast-data-2022
 license: ncsa
 team_model_designation: primary
 methods: "Modulation function for the estimate of the mosquito relative density combined with the probability of observing
@@ -31,5 +31,12 @@ methods_long: "We assess the probability of observing West Nile transmission eve
   \ of disease occurrence to estimate the expected cumulative number of neuroinvasive cases in each US county at the end of 2022. \
   \ In particular, we assume that in the counties reporting a sustained disease transmission, the number of WNV cases is proportional \
   \ to the expected maximum number of mosquitoes. The model is calibrated through an MCMC approach applied to the Negative binomial \
-  \ likelihood of observing the actual cumulative number of cases observed between 2012 and 2021."
+  \ likelihood of observing the actual cumulative number of cases observed between 2012 and 2021. For the forecast of July, the \
+  \ logistic regression model is used to estimate the probability that the disease is endemic across the different counties. \
+  \ Specifically, the disease is classified as “endemic” in a county if at least one neuroinvasive case was reported in 3 different \
+  \ years between 2017 and 2021. The disease is marked as “non-endemic” in a county if no neuroinvasive cases were observed between \
+  \ 2000 and 2021. Counties where the disease is neither classified as “present” nor as “absent”, are discarded from the analysis. \
+  \ Moreover, the number of WNV neuroinvasive cases in a county is modeled as proportional to the estimated annual mean number of \
+  \ mosquitoes through a region-dependent parameter, which depends on the biome of the county under study. Model calibration is \
+  \ performed by considering only counties reporting a sufficiently large cumulative number of WNV cases. "
 
