@@ -1,0 +1,11 @@
+team_name: CDC
+model_name: HistNB
+model_abbr: CDC-HistNB
+model_contributors: Karen Holcomb (NOAA/CDC) sne3@cdc.gov, Michael Johansson (CDC) eyq9@cdc.gov
+website_url: https://github.com/cdcepi/WNV-forecast-data-2022
+license: cc-by-4.0
+team_model_designation: primary
+methods: Quantiles from county-specific negative binomial fit to 2000-2021 historical WNV data.
+ensemble_of_hub_models: false
+data_inputs: No variables included.
+methods_long: This is a baseline model. We used the historical WNV (2000-2021) counts for each county to fit a county-specific negative binomial distribution. We then calculated the quantiles for each county from the fitted negative binomial.

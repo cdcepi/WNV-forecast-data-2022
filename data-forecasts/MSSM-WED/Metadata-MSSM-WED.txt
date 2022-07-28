@@ -1,0 +1,8 @@
+team_name: MSSM
+model_name: Weighted Empirical Distribution
+model_abbr: MSSM-WED
+model_contributors: Nicholas DeFelice (Icahn School of Medicine), nicholas.defelice@mssm.edu, Ward, Matthew J. (Icahn School of Medicine), Sorek-Hamer, Meytar (usra nasa ames research center) msorekhamer@usra.edu, Vemuri, Krishna (Icahn School of Medicine), krishna.vemuri@mssm.edu 
+website_url: 
+license: cc-by-4.0
+team_model_designation: primary
+methods: Here we use a hierarchical structure to combine the local and state distributions together. The local level gets 80% of the weight while the state gets 20%.  
