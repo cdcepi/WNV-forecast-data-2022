@@ -5,7 +5,7 @@ model_contributors: Morgan Gorris (Los Alamos National Laboratory) <mgorris@lanl
 website_url: https://github.com/cdcepi/WNV-forecast-data-2022
 license: cc-by-nc-4.0
 team_model_designation: primary
-methods: Divided between counties with less than 10 cases per year on average and more, then applied either a historical negative binomial or poisson distribution or, the single best climate predictor or case counts in the prior year.
+methods: Divided between counties with less than 10 cases per year on average and more, then used historical case and climate data and applied a negative binomial or poisson distribution.
 ensemble_of_hub_models: false
 data_inputs: 2005-2021 neuroinvasive case data, PRISM Climate Data from Oregon State University
 team_funding: Los Alamos National Laboratory, Laboratory Directed Research and Development, XX9E, CIMMID project. JAS was supported by an appointment to the Intelligence Community Postdoctoral Research Fellowship Program at Los Alamos National Laboratory administered by Oak Ridge Institute for Science and Education (ORISE) through an interagency agreement between the US DOE and the Office of the Director of National Intelligence.
