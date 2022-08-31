@@ -21,6 +21,7 @@ be evaluated according to [these criteria](./Evaluation.md).
 - Project announcement and historical data release: Winter 2022.
 - Initial forecast due: April 30, 2022.
 - Additional forecasts due (optional): May 31, June 30, and July 31, 2022.
+- Additional optional forecast submissions allowed through Oct 31, 2022 (not formally evaluated).
 
 
 ## Background
