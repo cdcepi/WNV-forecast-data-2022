@@ -24,7 +24,7 @@ be evaluated according to [these criteria](./Evaluation.md).
 - Additional optional forecast submissions allowed through Oct 31, 2022 (not formally evaluated).
 
 ### Preliminary visualization
-We developed an [interactive app](https://forecast.vectorsurv.org/WNV) to visualize submitted forecasts. The app allows visualization of the median forecasted number of WNV neuroinvasive disease cases per county for 2022 as well as the forecasted probability that the count exceeds the county's 10-year median or maximum. We also provide a county-specific plot of forecasts for all participating teams and comparison models (i.e., median ensemble built from the final submissions from teams and a negative binomial historical data model).
+We developed an [interactive app](https://forecast.vectorsurv.org/WNV) to visualize submitted forecasts. The app allows visualization of the median forecasted number of WNV neuroinvasive disease cases per county for 2022 as well as the forecasted probability that the count exceeds the county's 10-year median or maximum. We also provide a county-specific plot of forecasts for all participating teams and comparison models (i.e., median ensemble built from the final submissions (up to July) from teams and a negative binomial historical data model).
 
 
 ## Background
